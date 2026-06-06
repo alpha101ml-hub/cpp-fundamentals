@@ -1,0 +1,38 @@
+# Section Overview
+Characters and Strings
+
+1. Character functions
+2. C-style Strings
+3. Working with C-style Strings
+4. C++ Strings
+5. Working with C++ Strings
+
+
+# Character functions
+#include<cctype>
+          
+          #include <cctype>
+          
+          function_name(char)
+
+1. Functions for testing Characters
+2. Functions for converting character case 
+
+
+# Character Functions
+Testing characters 
+
+    1. isalpha(c)    True if c is a letter
+    2. isalnum(c)    True if c is a letter or digit
+    3. isdigit(c)    True if c is a digit 
+    4. islower(c)    True if c is lowercase letter 
+    5. isprint(c)    True if c is a printable character
+    6. ispunct(c)    True if c is a punctuation character 
+    7. isupper(c)    True if c is uppercase letter 
+    8. isspace(c)    True if c is whitespace
+
+Converting Characters
+
+    1. tolower(c)   returns lowercase of C
+    2. toupper(c)   returns uppercase of c 
+
