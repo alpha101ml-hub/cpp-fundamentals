@@ -1,0 +1,62 @@
+# C-style Strings
+
+1. Sequence of characters
+    1. Contiguous in memory
+    2. Implemented as an array of characters
+    3. Terminated by a null character (null)
+        1. null - character with a value of zero
+    4. Referred to as zero or null terminated Strings
+
+2. String literal
+    1. Sequence of characters in double quotes,, e.g. "Frank
+    2. constant
+    3. terminated with null character
+
+
+                "C++ is fun"
+        | C | + | + |   | i | s |   | f | u | n | \0 |
+
+
+declaring variables
+
+            char my_name[] {"Frank"};
+           | F | r | a | n | k | \0 |
+            my_name[5] = 'y'; // Problem
+
+
+            char my_name[8] {"Frank"};
+           | F | r | a | n | k | \0 | \0 | \0 |
+            my_name[5] = 'y'; // OK
+
+                char my_name[8];
+           | ? | ? | ? | ? | ? | ? | ? | ? |
+            my_name = 'Frank';      // Error
+            strcpy(my_name, "Frank"); // OK
+
+            
+#include <cstring>
+Functions that work with C-style Strings
+
+1. Copying
+2. Concatenation
+3. Comparison
+4. Searching
+5. and others
+
+A few examples
+
+char str[80];
+strcpy(str, " Hello "); // copy 
+strcat(str, "there"); // Concatenate
+cout << strlen(str);  // 11
+strcmp(str, "Another"); // > 0
+
+
+#include<cstdlib>
+General prupose functions
+
+1. include functions to convert C-style Strings to
+    1. integer
+    2. float
+    3. long
+    4. etc.
